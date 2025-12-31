@@ -1,6 +1,6 @@
-import js from "@eslint/js";
-import globals from "globals";
-import { defineConfig, globalIgnores } from "eslint/config";
+import js from "@eslint/js"
+import globals from "globals"
+import { defineConfig, globalIgnores } from "eslint/config"
 
 export default defineConfig([
   {
@@ -8,6 +8,9 @@ export default defineConfig([
     plugins: { js },
     extends: ["js/recommended"],
     languageOptions: { globals: globals.browser },
+    rules: {
+      "no-unused-vars": "warn",
+    },
   },
   globalIgnores([
     "**/dist",
@@ -17,4 +20,4 @@ export default defineConfig([
     "webpack.prod.js",
     "webpack.common.js",
   ]),
-]);
+])

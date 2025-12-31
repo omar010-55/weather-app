@@ -1,4 +1,58 @@
 /* styles.css */
 body {
   background-color: rebeccapurple;
+  font-family: sans-serif;
+}
+
+.conrainer {
+  display: flex;
+  gap: 10px;
+  border: 1px solid;
+  background-color: wheat;
+}
+
+.box {
+  outline: 1px dashed;
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  flex-basis: 14%;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+input#location {
+  width: 33%;
+  height: 35px;
+  border-radius: 10px;
+}
+
+button {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 20px;
+}
+
+p.description {
+  background-color: gray;
+  padding: 12px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+span.temp {
+  font-size: 70px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+span.degree {
+  font-size: 25px;
+  font-family: sans-serif;
+  padding-top: 5px;
 }
